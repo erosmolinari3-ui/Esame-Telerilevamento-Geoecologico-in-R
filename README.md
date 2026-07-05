@@ -149,3 +149,9 @@ plot(sabi25_solo_lago, col = cl_alghe, range= c(-0.03,0.05), main = "Bloom Algal
 ```
 
 ![Bloom Algali Amatitlan](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/bloom%20algali%20amatitlan%20DEF.jpeg)
+
+# DISCUSSIONE E RISULTATI
+
+Per l'NDVI: Evidenziare se attorno ai laghi la foresta (verde scuro) ha ceduto il passo a zone agricole/urbane (giallo/marrone).
+
+Per il SABI: Evidenziare come l'aumento delle aree rosse/gialle nei laghi (specialmente nel 2025) coincida temporalmente con la perdita di vegetazione circostante osservata nell'NDVI, confermando l'apporto di nutrienti da dilavamento agricolo o scarichi urbani.
