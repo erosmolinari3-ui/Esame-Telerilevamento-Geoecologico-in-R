@@ -23,6 +23,9 @@ Il tipo di satellite usato è Landsat 8 (google earth engine) , impostato su imm
 Le immagini sono state prese dall’ 1/8 al 31/12 
 Tale finestra temporale coincide con i picchi storici di fioritura algale e cianobatterica (Rejmánková et al.), garantendo al contempo le condizioni di stabilità atmosferica necessarie per l'acquisizione di immagini satellitari ottiche prive di copertura nuvolosa. 
 
+# N.B
+"L'analisi metodologica viene sviluppata in dettaglio sul Lago di Atitlán e successivamente applicata in ottica comparativa al Lago di Amatitlán, offrendo così un duplice scenario di risposta ecologica (lago profondo vs lago poco profondo) agli impatti del LULC."
+
 # Analisi codice e sviluppo del progetto
 Per questo progetto sono stati usati i vari pacchetti:
 ``` r
