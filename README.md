@@ -41,7 +41,7 @@ verifichiamo un'immagine con le bande colori reali:
 ``` r
 im.plotRGB(lago15, r=3, g=2, b=1)
 ```
-![LAGO](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/LAGO.jpeg)
+![LAGO1](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/LAGO1.jpeg)
 
 visualizziamo le bande di colori con istogrammi per verificare la differenzaa tra 205 e 2025
 ``` r
