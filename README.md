@@ -159,10 +159,11 @@ Per il SABI: Evidenziare come l'aumento delle aree rosse/gialle nei laghi (speci
 #LAGO DI ATITLAN
 ![CONFRONTO ATITLAN](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/CONFRONTO%20ATITLAN.jpeg)
 
-Nel 2015 il lago mostrava una fioritura algale confinata e acuta nella porzione terminale est, probabilmente legata a uno scarico puntiforme. Nel 2025, in concomitanza con l'aumento dell'impatto antropico e agricolo visibile dall'NDVI su tutto il bacino , il fenomeno è cambiato: non abbiamo più l'evento isolato nella coda, ma l'intero specchio d'acqua ha subito un incremento sistematico e omogeneo dei valori di SABI. Il lago è diventato ecologicamente più instabile e diffusamente produttivo a causa del costante dilavamento di nutrienti dal suolo circostante.
+In questi 10 anni i livelli di fioritura algale si sono espansi dalle sponde a tutto il lago. Analizzando le zone limitrofe delle sponde si può notare un'atropizzazione sempre più densa. Questi dati si riflettono sicuramente sulle espansioni algali nel lago.
+
 
 #LAGO DI AMATITLAN
 
 ![CONFRONTO AMATITLAN](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/CONFRONTO%20AMATITLAN.jpeg)
 
-
+Nel 2015 il lago mostrava una fioritura algale confinata e acuta nella porzione terminale est, probabilmente legata a uno scarico puntiforme. Nel 2025, in concomitanza con l'aumento dell'impatto antropico e agricolo visibile dall'NDVI su tutto il bacino , il fenomeno è cambiato: non abbiamo più l'evento isolato nella coda, ma l'intero specchio d'acqua ha subito un incremento sistematico e omogeneo dei valori di SABI. Il lago è diventato ecologicamente più instabile e diffusamente produttivo a causa del costante dilavamento di nutrienti dal suolo circostante.
