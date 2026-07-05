@@ -145,4 +145,4 @@ plot(sabi20_solo_lago, col = cl_alghe, range= c(-0.03,0.05), main = "Bloom Algal
 plot(sabi25_solo_lago, col = cl_alghe, range= c(-0.03,0.05), main = "Bloom Algali 2025 (SABI)")
 ```
 
-![Bloom Algali Amatitlan](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esa
+![Bloom Algali Amatitlan](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/bloom%20algali%20amatitlan%20DEF.jpeg)
