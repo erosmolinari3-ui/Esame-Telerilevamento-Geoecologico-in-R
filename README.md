@@ -88,9 +88,10 @@ plot(ndvi20, col = cl_ndvi, range =c(0,1), main = "Stato Vegetazione 2020 (NDVI)
 plot(ndvi25, col = cl_ndvi, range =c(0,1), main = "Stato Vegetazione 2025 (NDVI)")
 ``` 
 
+![STATO VEGETAZ ATITLAN DEF](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/STATO%20VEGETAZ%20ATITLAN%20DEF.jpeg)
+
 ![vegetazione amatitlan](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/vegetazione%20amatitlan.jpeg)
 
-![STATO VEGETAZ ATITLAN DEF](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/STATO%20VEGETAZ%20ATITLAN%20DEF.jpeg)
 
 4. PLOT 2: EUTROFIZZAZIONE E ALGHE NEL LAGO (DVI)
 
