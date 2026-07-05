@@ -155,3 +155,14 @@ plot(sabi25_solo_lago, col = cl_alghe, range= c(-0.03,0.05), main = "Bloom Algal
 Per l'NDVI: Evidenziare se attorno ai laghi la foresta (verde scuro) ha ceduto il passo a zone agricole/urbane (giallo/marrone).
 
 Per il SABI: Evidenziare come l'aumento delle aree rosse/gialle nei laghi (specialmente nel 2025) coincida temporalmente con la perdita di vegetazione circostante osservata nell'NDVI, confermando l'apporto di nutrienti da dilavamento agricolo o scarichi urbani.
+
+#LAGO DI ATITLAN
+![CONFRONTO ATITLAN](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/CONFRONTO%20ATITLAN.jpeg)
+
+Nel 2015 il lago mostrava una fioritura algale confinata e acuta nella porzione terminale est, probabilmente legata a uno scarico puntiforme. Nel 2025, in concomitanza con l'aumento dell'impatto antropico e agricolo visibile dall'NDVI su tutto il bacino , il fenomeno è cambiato: non abbiamo più l'evento isolato nella coda, ma l'intero specchio d'acqua ha subito un incremento sistematico e omogeneo dei valori di SABI. Il lago è diventato ecologicamente più instabile e diffusamente produttivo a causa del costante dilavamento di nutrienti dal suolo circostante.
+
+#LAGO DI AMATITLAN
+
+![CONFRONTO AMATITLAN](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/CONFRONTO%20AMATITLAN.jpeg)
+
+
