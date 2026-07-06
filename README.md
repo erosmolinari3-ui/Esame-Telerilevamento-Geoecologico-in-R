@@ -46,7 +46,7 @@ im.plotRGB(lago15, r=3, g=2, b=1)
 ```
 ![LAGO1](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/LAGO1.jpeg)
 
-visualizziamo le bande di colori con istogrammi per verificare la differenzaa tra 205 e 2025
+visualizziamo le bande di colori con istogrammi per verificare la differenza tra 2015 e 2025
 ``` r
 hist(values(lago15[[1]]), freq = FALSE, xlim = c(0, 30000),ylim = c(0, 0.00045), main="Istogramma Red 2015", col="red")
 hist(values(lago15[[2]]), freq = FALSE, xlim = c(0, 30000),ylim = c(0, 0.00045), main="Istogramma Green 2015", col="green")
