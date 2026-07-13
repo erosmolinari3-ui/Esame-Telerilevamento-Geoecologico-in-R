@@ -24,7 +24,7 @@ Lago di Atitlán: Un lago profondo di origine vulcanica (oligotrofico, ma in tra
 
 Lago di Amatitlán: Un lago poco profondo (iper-eutrofico, soggetto a un forte carico di nutrienti puntiformi e diffusi provenienti dall'area metropolitana di Città del Guatemala).
 
-🛰️ 2. Dataset e Finestra Temporale
+# 🛰️ Dataset e Finestra Temporale
 
 Il tipo di satellite usato è Landsat 8, acquisite tramite Google Earth Engine (GEE) (Modello Collection 2, Level 2 - Surface Reflectance).
 
