@@ -1,5 +1,8 @@
 
 # 🌊 Dinamiche di LULC e di eutrofizzazione nei laghi di Amatitlan ed Atitlan
+### Esame di Telerilevamento Geo-Ecologico in R - 2026
+#### Molinari Eros
+
 <table>
   <tr>
     <td>
@@ -30,7 +33,7 @@ Il tipo di satellite usato è Landsat 8 in Google Earth Engine (GEE) (Modello Co
 
 [Landsat 8 su Google Earth Engine](https://code.earthengine.google.com/?scriptPath=Examples%3ADatasets%2FLANDSAT%2FLANDSAT_LC08_C02_T1&hl=it)
 
-[!NOTE]
+>[!NOTE]
 > Il codice JavaScript utilizzato è quello fornito durante il corso ed è disponibile nel file Codice.js
 
 Le immagini sono state prese dall’ 1 agosto al 31 dicembre degli anni indicati
