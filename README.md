@@ -12,9 +12,9 @@
 </table>
 
 # 📌 Introduzione e obiettivo
-Il Mesoamerica è una delle aree più critiche al mondo per studiare il Land Use/Land Cover Change (LULC), specialmente per le dinamiche di deforestazione e di espansione agricola nelle zone vicino ai laghi. In Guatemala, l'accelerazione della deforestazione, l'espansione agricola incontrollata e la pressione urbana stanno alterando radicalmente i bacini idrografici lacustri.
+Il Mesoamerica è una delle aree più critiche al mondo per studiare il Land Use/Land Cover Change (LULC), specialmente per le dinamiche di deforestazione e di espansione agricola. In Guatemala, l'accelerazione di questi fenomeni e la pressione urbana stanno alterando radicalmente i bacini idrografici lacustri.
 
-L'obiettivo di questo studio è analizzare il cambiamento di  land use change e di bloom algale in aree critiche del Guatemala che in questi ultimi anni hanno avuto drastici cambiamenti dovuti all'antropizzazione delle aree. Questo verificherà in poi se presente una relazione tra LULC e fenomeni di eutrofizzazione acquatica, tutto questo  in un orizzonte temporale di 10 anni ($2015 \rightarrow 2020 \rightarrow 2025$), con campionamenti a cadenza quinquennale.
+L'obiettivo di questo studio è analizzare il cambiamento di land use change e di bloom algale in aree critiche del paese che in questi ultimi anni hanno avuto drastiche trasformazioni dovute all'antropizzazione delle zone limitrofe ai bacini. Verrà verificato in seguito, se presente, una relazione tra LULC e fenomeni di eutrofizzazione acquatica, tutto questo  in un orizzonte temporale di 10 anni ($2015 \rightarrow 2020 \rightarrow 2025$), con campionamenti a cadenza quinquennale.
 
 # 🔬 Approccio Comparativo: Lago Profondo vs Lago Poco Profondo
 
@@ -26,16 +26,16 @@ Lago di Amatitlán: Un lago poco profondo (iper-eutrofico, soggetto a un forte c
 
 # 🛰️ Dataset e Finestra Temporale
 
-Il tipo di satellite usato è Landsat 8, acquisite tramite Google Earth Engine (GEE) (Modello Collection 2, Level 2 - Surface Reflectance).
+Il tipo di satellite usato è Landsat 8 in Google Earth Engine (GEE) (Modello Collection 2, Level 2 - Surface Reflectance).
 
 [Landsat 8 su Google Earth Engine](https://code.earthengine.google.com/?scriptPath=Examples%3ADatasets%2FLANDSAT%2FLANDSAT_LC08_C02_T1&hl=it)
 
 Le immagini sono state prese dall’ 1 agosto al 31 dicembre degli anni indicati
 
-Motivazioen ecologica : coincide con i picchi storici di fioritura algale e cianobatterica (Rejmánková et al.), garantendo al contempo le condizioni di stabilità atmosferica necessarie per l'acquisizione di immagini satellitari ottiche prive di copertura nuvolosa. 
+Motivazione ecologica : coincide con i picchi storici di fioritura algale e cianobatterica nelle aree di studio (Rejmánková et al.), garantendo al contempo le condizioni di stabilità atmosferica necessarie per l'acquisizione di immagini satellitari ottiche prive di copertura nuvolosa. 
 
 # N.B
-"L'analisi metodologica viene sviluppata qui in Github in dettaglio sul Lago di Atitlán e successivamente applicata in ottica comparativa al Lago di Amatitlán, offrendo così un duplice scenario di risposta ecologica (lago profondo vs lago poco profondo) agli impatti del LULC e di fioritura algale."
+"Per motivi di chiarezza e di impatto grafico l'analisi metodologica viene sviluppata qui in Github nel dettaglio sul Lago di Atitlán e successivamente applicata in ottica comparativa al Lago di Amatitlán, offrendo così un duplice scenario di risposta ecologica (lago profondo vs lago poco profondo) agli impatti del LULC e di fioritura algale."
 
 # 💻 Analisi codice e sviluppo del progetto in R
 
