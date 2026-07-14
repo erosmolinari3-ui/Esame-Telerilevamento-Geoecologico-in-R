@@ -51,8 +51,10 @@ Motivazione ecologica : coincide con i picchi storici di fioritura algale e cian
 
 caricamento librerie e dei dati
 ``` r
-library(terra)
-library(imageRy)
+library(terra)      # analisi delle immagini satellitari (raster)
+library(imageRy)    # visualizzazione delle immagini satellitari  
+library(viridis)    # editing delle palette di colori 
+
 lago15 <- rast("C:/Users/erosm/Downloads/amatitlan_2015.tif")
 lago20 <- rast("C:/Users/erosm/Downloads/amatitlan_2020.tif")
 lago25 <- rast("C:/Users/erosm/Downloads/amatitlan_2025.tif")
