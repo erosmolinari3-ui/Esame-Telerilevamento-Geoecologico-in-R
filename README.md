@@ -42,10 +42,12 @@ Le immagini sono state prese dall’ 1 agosto al 31 dicembre degli anni indicati
 
 Motivazione ecologica : coincide con i picchi storici di fioritura algale e cianobatterica nelle aree di studio (Rejmánková et al.), garantendo al contempo le condizioni di stabilità atmosferica necessarie per l'acquisizione di immagini satellitari ottiche prive di copertura nuvolosa. 
 
-# N.B
 "Per motivi di chiarezza e di impatto grafico l'analisi metodologica viene sviluppata qui in Github nel dettaglio sul Lago di Atitlán e successivamente applicata in ottica comparativa al Lago di Amatitlán, offrendo così un duplice scenario di risposta ecologica (lago profondo vs lago poco profondo) agli impatti del LULC e di fioritura algale."
 
 # 💻 Analisi codice e sviluppo del progetto in R
+
+>[!NOTE]
+>Per motivi di chiarezza e di impatto grafico l'analisi metodologica viene sviluppata qui in Github nel dettaglio sul Lago di Atitlán e successivamente applicata in ottica comparativa al Lago di Amatitlán, offrendo così un duplice scenario di risposta ecologica (lago profondo vs lago poco profondo) agli impatti del LULC e di fioritura algale.
 
 caricamento librerie e dei dati
 ``` r
