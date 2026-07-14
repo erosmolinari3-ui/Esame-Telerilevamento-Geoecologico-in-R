@@ -30,6 +30,9 @@ Il tipo di satellite usato è Landsat 8 in Google Earth Engine (GEE) (Modello Co
 
 [Landsat 8 su Google Earth Engine](https://code.earthengine.google.com/?scriptPath=Examples%3ADatasets%2FLANDSAT%2FLANDSAT_LC08_C02_T1&hl=it)
 
+[!NOTE]
+> Il codice JavaScript utilizzato è quello fornito durante il corso ed è disponibile nel file Codice.js
+
 Le immagini sono state prese dall’ 1 agosto al 31 dicembre degli anni indicati
 
 Motivazione ecologica : coincide con i picchi storici di fioritura algale e cianobatterica nelle aree di studio (Rejmánková et al.), garantendo al contempo le condizioni di stabilità atmosferica necessarie per l'acquisizione di immagini satellitari ottiche prive di copertura nuvolosa. 
