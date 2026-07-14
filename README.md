@@ -86,6 +86,7 @@ Calcolo degli indici NDVI e DVI usati per vedere il **land-use change** (Banda 3
 ndvi15 <- (lago15[[4]] - lago15[[3]]) / (lago15[[4]] + lago15[[3]])
 ndvi20 <- (lago20[[4]] - lago20[[3]]) / (lago20[[4]] + lago20[[3]])
 ndvi25 <- (lago25[[4]] - lago25[[3]]) / (lago25[[4]] + lago25[[3]])
+diff_ndvi<-(ndvi15-ndvi25)
 
 dvi15 <- lago15[[4]] - lago15[[3]]
 dvi20 <- lago20[[4]] - lago20[[3]]
@@ -104,11 +105,13 @@ Plot per verificare il land-use change
 plot(ndvi15, col = cl_ndvi, range =c(0,1), main = "Stato Vegetazione 2015 (NDVI)")
 plot(ndvi20, col = cl_ndvi, range =c(0,1), main = "Stato Vegetazione 2020 (NDVI)")
 plot(ndvi25, col = cl_ndvi, range =c(0,1), main = "Stato Vegetazione 2025 (NDVI)")
+plot(diff_ndvi, col = cl_ndvi, range =c(0,1), main = "Stato Vegetazione 2025 (NDVI)")
+
 ``` 
 
-![STATO VEGETAZ ATITLAN DEF](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/STATO%20VEGETAZ%20ATITLAN%20DEF.jpeg)
+![STATO VEGETAZ ATITLAN DEF](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/atindvi.jpeg)
 
-![vegetazione amatitlan](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/vegetazione%20amatitlan.jpeg)
+![vegetazione amatitlan](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/amandvi.jpeg)
 
 
 Isolamento del Lago (mascheramento NDWI) e calcolo del Surface Algae bloom index (**SABI**)
@@ -148,26 +151,26 @@ maskvalue=FALSE significa "Nascondi tutto quello che NON è acqua"
 sabi15_solo_lago <- mask(sabi15, maschera_acqua15, maskvalue=FALSE)
 sabi20_solo_lago <- mask(sabi20, maschera_acqua20, maskvalue=FALSE)
 sabi25_solo_lago <- mask(sabi25, maschera_acqua25, maskvalue=FALSE)
+diff_sabi<-(sabi15_solo_lago-sabi25_solo_lago)
 ``` 
 
-Creiamo una palette: 
-``` r
-Blu profondo (acqua pulita) -> Azzurro -> Giallo/Arancio -> Rosso (fioritura severa)
-cl_alghe <- colorRampPalette(c("darkblue", "deepskyblue", "yellow", "red"))(100)
-```
-
-Ora che la terraferma non c'è più, la scala cromatica si adatterà 
-automaticamente in modo chirurgico solo alle dinamiche dell'acqua!
+Creiamo una palette idonea che permetta di verificare anche il più minimo cambiamento nei 10 anni: 
 
 ``` r
-plot(sabi15_solo_lago, col = cl_alghe, range= c(-0.03,0.05), main = "Bloom Algali 2015 (SABI)")
-plot(sabi20_solo_lago, col = cl_alghe, range= c(-0.03,0.05), main = "Bloom Algali 2020 (SABI)")
-plot(sabi25_solo_lago, col = cl_alghe, range= c(-0.03,0.05), main = "Bloom Algali 2025 (SABI)")
+palette <- colorRampPalette(brewer.pal(11, "PuOr"))(100)
 ```
 
-![BLOOM ATITLAN](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/BLOOM%20ATITLAN.jpeg)
+``` r
+plot(sabi15_solo_lago, col = viridis(100), range = c(-0.06, 0.06), main = "Bloom Algali 2015 Atitlan (SABI)")
+plot(sabi20_solo_lago, col = viridis(100), range = c(-0.06, 0.06), main = "Bloom Algali 2020 Atitlan (SABI)")
+plot(sabi25_solo_lago, col = viridis(100), range = c(-0.06, 0.06), main = "Bloom Algali 2025 Atitlan (SABI)")
+plot(diff_sabi, col =palette, range = c(-0.06, 0.06), main = "Differenza 2015-2025 Atitlan (SABI)")
 
-![BLOOM AMATITLAN](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/BLOOM%20AMATITLAN.jpeg)
+```
+
+![BLOOM ATITLAN](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/atibloom.jpeg)
+
+![BLOOM AMATITLAN](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/amabloom.jpeg)
 
 # 📊 DISCUSSIONE DEI RISULTATI
 
