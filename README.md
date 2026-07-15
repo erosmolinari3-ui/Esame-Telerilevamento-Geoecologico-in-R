@@ -126,9 +126,10 @@ plot(ndvi, col=viridis(100), range =c(0,1), main = "Differenza 2015-2025 Atitlan
 
 ### Calcolo Surface Algae Bloom Index (SABI)
 
-Surface Algae Bloom Index (SABI) serve a evidenziare e mappare le fioriture algali galleggianti (cianobatteri) e la vegetazione costiera. Sfrutta le bande vicine all'infrarosso e allo spettro del visibile (Alawadi et al.). 
+Surface Algae Bloom Index (SABI) serve a evidenziare e mappare le fioriture algali galleggianti (cianobatteri) e la vegetazione costiera. Sfrutta le bande vicine all'infrarosso e allo spettro del visibile per evidenziare le fioriture algali (Alawadi et al.). 
 
 formula:
+
 $$
 SABI = \frac{NIR - RED}{GREEN + BLUE}
 $$
