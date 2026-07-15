@@ -16,7 +16,7 @@
   </tr>
 </table>
 
- > aree di studio prese in considerazione. A dx lago di Atitlan, a sx lago di Amatitlan
+ > aree di studio prese in considerazione. A sx lago di Atitlan, a dx lago di Amatitlan
 
 Il Mesoamerica è una delle aree più critiche al mondo per studiare il Land Use/Land Cover Change (LULC), specialmente per le dinamiche di deforestazione e di espansione agricola. In Guatemala, l'accelerazione di questi fenomeni e la pressione urbana stanno alterando radicalmente i bacini idrografici lacustri.
 
@@ -69,6 +69,7 @@ im.plotRGB(lago15, r=3, g=2, b=1)
 ```
 ![LAGO1](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/LAGO1.jpeg)
 
+> lago di Atitlan con bande True Colors
 Analizziamo la distribuzione spettrale delle frequenze per verificare la consistenza radiometrica dei sensori tra il 2015 e il 2025:
 ``` r
 hist(values(lago15[[1]]), freq = FALSE, xlim = c(0, 30000),ylim = c(0, 0.00045), main="Istogramma Red 2015", col="red")
