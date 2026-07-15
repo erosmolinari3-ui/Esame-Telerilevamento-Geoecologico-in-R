@@ -55,7 +55,9 @@ caricamento librerie e dei dati
 ``` r
 library(terra)      # analisi delle immagini satellitari (raster)
 library(imageRy)    # visualizzazione delle immagini satellitari  
-library(viridis)    # editing delle palette di colori 
+library(viridis)    # editing delle palette di colori
+library(RColorBrewer)  # editing delle palette di colori per scale di colori per daltonismo
+library(ggplot2) #per creare grafici di confronto multivariabili
 
 lago15 <- rast("C:/Users/erosm/Downloads/amatitlan_2015.tif")
 lago20 <- rast("C:/Users/erosm/Downloads/amatitlan_2020.tif")
@@ -70,6 +72,7 @@ im.plotRGB(lago15, r=3, g=2, b=1)
 ![LAGO1](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/LAGO1.jpeg)
 
 > lago di Atitlan con bande True Colors
+
 Analizziamo la distribuzione spettrale delle frequenze per verificare la consistenza radiometrica dei sensori tra il 2015 e il 2025:
 ``` r
 hist(values(lago15[[1]]), freq = FALSE, xlim = c(0, 30000),ylim = c(0, 0.00045), main="Istogramma Red 2015", col="red")
@@ -83,8 +86,9 @@ hist(values(lago25[[3]]), freq = FALSE, xlim = c(0, 30000),ylim = c(0, 0.00045),
 ```
 ![ISTO](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/ISTO.jpeg)
 
+> Istogrammi di consistenza radiometrica, confronto tra 2015 e 2025
 
-Calcolo degli indici NDVI e DVI usati per vedere il **land-use change** (Banda 3 = Red, Banda 4 = NIR)
+###Calcolo degli indici NDVI e DVI usati per vedere il **land-use change** (Banda 3 = Red, Banda 4 = NIR)
 ``` r
 ndvi15 <- (lago15[[4]] - lago15[[3]]) / (lago15[[4]] + lago15[[3]])
 ndvi20 <- (lago20[[4]] - lago20[[3]]) / (lago20[[4]] + lago20[[3]])
@@ -95,7 +99,7 @@ dvi15 <- lago15[[4]] - lago15[[3]]
 dvi20 <- lago20[[4]] - lago20[[3]]
 dvi25 <- lago25[[4]] - lago25[[3]]
 ``` 
-PLOT LAND USE CHANGE (NDVI)
+PLOT LAND USE/LAND COVER CHANGE (NDVI)
 ``` r
 par(mfrow = c(2, 2))
 ``` 
@@ -105,22 +109,28 @@ cl_ndvi <- colorRampPalette(c("saddlebrown", "yellow", "forestgreen"))(100)
 ``` 
 Plot per verificare il land-use change
 ``` r
-plot(ndvi15, col = cl_ndvi, range =c(0,1), main = "Stato Vegetazione 2015 (NDVI)")
-plot(ndvi20, col = cl_ndvi, range =c(0,1), main = "Stato Vegetazione 2020 (NDVI)")
-plot(ndvi25, col = cl_ndvi, range =c(0,1), main = "Stato Vegetazione 2025 (NDVI)")
-plot(diff_ndvi, col = cl_ndvi, range =c(0,1), main = "Stato Vegetazione 2025 (NDVI)")
+plot(ndvi15, col=viridis(100), range =c(0,1), main = "Stato Vegetazione Atitlan 2015 (NDVI)")
+plot(ndvi20, col=viridis(100), range =c(0,1), main = "Stato Vegetazione Atitlan 2020 (NDVI)")
+plot(ndvi25, col=viridis(100), range =c(0,1), main = "Stato Vegetazione Atitlan 2025 (NDVI)")
+plot(ndvi, col=viridis(100), range =c(0,1), main = "Differenza 2015-2025 Atitlan (NDVI)")
 
 ``` 
 
 ![STATO VEGETAZ ATITLAN DEF](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/atindvi.jpeg)
 
+> Stato vegetazionale intorno al lago di Atitlan
+
 ![vegetazione amatitlan](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/amandvi.jpeg)
 
+> Stato vegetazionale intorno al lago di Amatitlan
 
-Isolamento del Lago (mascheramento NDWI) e calcolo del Surface Algae bloom index (**SABI**)
+### Calcolo Surface Algae Bloom Index (SABI)
 
-ISOLARE IL LAGO CON L'NDWI (Normalized Difference Water Index)
-L'NDWI sfrutta il Verde (riflesso dall'acqua) e il NIR (assorbito dall'acqua).
+Surface Algae Bloom Index (SABI) serve a evidenziare e mappare le fioriture algali galleggianti (cianobatteri) e la vegetazione costiera. Sfrutta le bande vicine all'infrarosso e allo spettro del visibile (Alawadi et al.). 
+
+Ho isolato il Lago (mascheramento NDWI) e calcolato il Surface Algae bloom index (**SABI**)
+
+L'NDWI (Normalized Difference Water Index) sfrutta il Verde (riflesso dall'acqua) e il NIR (assorbito dall'acqua).
 I valori > 0 indicano l'acqua pura. I valori < 0 indicano la terraferma.
 
 ``` r
@@ -134,6 +144,12 @@ Creiamo le maschere: diciamo a R "Trova tutti i pixel dove l'NDWI è > 0 , cioè
 maschera_acqua15 <- ndwi15 > 0
 maschera_acqua20 <- ndwi20 > 0
 maschera_acqua25 <- ndwi25 > 0
+```
+>[!NOTE]
+> Vedendo i risultati del decadimento spaziale dell'eutrofizzazione decido di porre i valori 0 come NA per non falsare le divisioni
+``` r
+# Trasforma tutti i valori 0 (FALSE, la terra) in NA
+maschera_acqua25[maschera_acqua25 == 0] <- NA
 ``` 
 
 CALCOLARE IL SABI (Surface Algal Bloom Index)
@@ -228,17 +244,13 @@ Lago di Amatitlan: Il modello LOESS mostra un nitido decadimento spaziale inshor
 
 # 📊 DISCUSSIONE DEI RISULTATI
 
-Per l'NDVI: Evidenziare se attorno ai laghi la foresta (verde scuro) ha ceduto il passo a zone agricole/urbane (giallo/marrone).
-
-Per il SABI: Evidenziare come l'aumento delle aree rosse/gialle nei laghi (specialmente nel 2025) coincida temporalmente con la perdita di vegetazione circostante osservata nell'NDVI, confermando l'apporto di nutrienti da dilavamento agricolo o scarichi urbani (Alawadi et al.)
-
-# 🏔️ LAGO DI ATITLAN
+### 🏔️ LAGO DI ATITLAN
 ![CONFRONTO ATITLAN](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/CONFRONTO%20ATITLAN.jpeg)
 
 In questi 10 anni i livelli di fioritura algale si sono espansi dalle sponde a tutto il lago. Analizzando le zone di sponda si può notare che le fioriture algali si sono espanse in modo concentrico negli anni, muovendosi verso il centro dello specchio d'acqua (zone naturalmente meno antropizzate). Analizzando i plot del LULC si denota subito un incremento di zone antropizzate con progressiva trasformazione di zone forestali seppur con basso indice NDVI a favore di zone di insediamento o altro utilizzo. Questo può causare un dilavamento costante di sedimenti intorno al lago che innesca processi di instabilità ecologica in un lago storicamente oligotrofico (caratteristica derivata dalla sua profondità)
 
 
-# 🌾 LAGO DI AMATITLAN
+### 🌾 LAGO DI AMATITLAN
 
 ![CONFRONTO AMATITLAN](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/CONFRONTO%20AMATITLAN.jpeg)
 
