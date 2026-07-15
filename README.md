@@ -1,5 +1,5 @@
 
-# 🌊🗻 Dinamiche di LULC e di eutrofizzazione nei laghi di Amatitlan ed Atitlan
+# 🏞️ Dinamiche di LULC e di eutrofizzazione nei laghi di Amatitlan ed Atitlan
 ### Esame di Telerilevamento Geo-Ecologico in R - 2026
 #### Molinari Eros
 
