@@ -15,19 +15,20 @@
     </td>
   </tr>
 </table>
+> aree di studio prese in considerazione. A dx lago di Atitlan, a sx lago di Amatitlan
 
 Il Mesoamerica è una delle aree più critiche al mondo per studiare il Land Use/Land Cover Change (LULC), specialmente per le dinamiche di deforestazione e di espansione agricola. In Guatemala, l'accelerazione di questi fenomeni e la pressione urbana stanno alterando radicalmente i bacini idrografici lacustri.
 
 # 🎯 Obiettivo
-L'obiettivo di questo studio è analizzare il cambiamento di land use change e di bloom algale in aree critiche del paese che in questi ultimi anni hanno avuto drastiche trasformazioni dovute all'antropizzazione delle zone limitrofe ai bacini. Verrà verificato in seguito, se presente, una relazione tra LULC e fenomeni di eutrofizzazione acquatica, tutto questo  in un orizzonte temporale di 10 anni ($2015 \rightarrow 2020 \rightarrow 2025$), con campionamenti a cadenza quinquennale.
+L'obiettivo di questo studio è analizzare il cambiamento di land use change e di bloom algale in zone lagunari, aree critiche del paese che in questi ultimi anni hanno subito varie trasformazioni dovute all'antropizzazione. Verrà verificato in seguito, se presente, una relazione tra LULC e fenomeni di eutrofizzazione acquatica, tutto questo  in un orizzonte temporale di 10 anni ($2015 \rightarrow 2020 \rightarrow 2025$), con campionamenti a cadenza quinquennale.
 
 # 🔬 Approccio Comparativo: Lago Profondo vs Lago Poco Profondo
 
 La metodologia viene sviluppata in parallelo su due sistemi lacustri con caratteristiche morfometriche e risposte ecologiche opposte:
 
-Lago di Atitlán: Un lago profondo di origine vulcanica (oligotrofico, ma in transizione verso condizioni mesotrofiche a causa di pressioni diffuse).
+Lago di Atitlán: Un lago profondo di origine vulcanica (oligotrofico, ma in transizione verso condizioni mesotrofiche a causa di pressioni diffuse tra cui turismo ed antropizzazione).
 
-Lago di Amatitlán: Un lago poco profondo (iper-eutrofico, soggetto a un forte carico di nutrienti puntiformi e diffusi provenienti dall'area metropolitana di Città del Guatemala).
+Lago di Amatitlán: Un lago pur sempre di origine vulcanica, ma poco profondo (iper-eutrofico, soggetto a un forte carico di nutrienti puntiformi e diffusi provenienti dall'area metropolitana di Città del Guatemala).
 
 # 🛰️ Dataset e Finestra Temporale
 
