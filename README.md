@@ -128,7 +128,12 @@ plot(ndvi, col=viridis(100), range =c(0,1), main = "Differenza 2015-2025 Atitlan
 
 Surface Algae Bloom Index (SABI) serve a evidenziare e mappare le fioriture algali galleggianti (cianobatteri) e la vegetazione costiera. Sfrutta le bande vicine all'infrarosso e allo spettro del visibile (Alawadi et al.). 
 
-Ho isolato il Lago (mascheramento NDWI) e calcolato il Surface Algae bloom index (**SABI**)
+formula:
+$$
+SABI = \frac{NIR - RED}{GREEN + BLUE}
+$$
+
+Inizialmente ho isolato il Lago (mascheramento NDWI) e calcolato il Surface Algae bloom index (**SABI**)
 
 L'NDWI (Normalized Difference Water Index) sfrutta il Verde (riflesso dall'acqua) e il NIR (assorbito dall'acqua).
 I valori > 0 indicano l'acqua pura. I valori < 0 indicano la terraferma.
