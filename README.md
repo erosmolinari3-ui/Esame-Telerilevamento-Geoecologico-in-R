@@ -172,6 +172,52 @@ plot(diff_sabi, col =palette, range = c(-0.06, 0.06), main = "Differenza 2015-20
 
 ![BLOOM AMATITLAN](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/amabloom.jpeg)
 
+
+##Decadimento Spaziale dell'Eutrofizzazione
+Per validare e quantificare la relazione ecologica tra l'uso del suolo circostante e lo stato trofico delle acque lacustri, abbiamo integrato l'analisi visiva con una modellizzazione della distanza spaziale dal fattore di disturbo (la linea di costa).
+``` r
+library(ggplot2)
+
+# Estrazione del confine vettoriale del lago (shoreline) ed esclusione automatica della terraferma (NA)
+confini_lago <- as.polygons(maschera_acqua25)
+linea_costa  <- as.lines(confini_lago)
+
+# Calcolo delle distanze continue
+dist_raster <- distance(sabi25_solo_lago, linea_costa)
+dist_lago <- mask(dist_raster, maschera_acqua25)
+
+# Estrazione dei valori per l'analisi statistica in R con ggplot2
+df_spaziale <- data.frame(
+  Distanza = as.numeric(values(dist_lago)),
+  SABI_2015 = as.numeric(values(sabi15_solo_lago)),
+  SABI_2025 = as.numeric(values(sabi25_solo_lago))
+)
+df_spaziale <- df_spaziale[complete.cases(df_spaziale), ]
+
+# Campionamento statistico e reshaping in formato lungo per ggplot
+df_sub <- df_spaziale[sample(1:nrow(df_spaziale), 5000), ]
+df_long <- data.frame(
+  Distanza = rep(df_sub$Distanza, 2),
+  SABI = c(df_sub$SABI_2015, df_sub$SABI_2025),
+  Anno = rep(c("2015", "2025"), each = nrow(df_sub))
+)
+
+# Plotting del modello di regressione locale LOESS
+ggplot(df_long, aes(x = Distanza, y = SABI, color = Anno)) +
+  geom_point(alpha = 0.15, size = 1) +
+  geom_smooth(method = "loess", span = 0.5, size = 1.5, se = TRUE) +
+  scale_color_manual(values = c("2015" = "deepskyblue3", "2025" = "firebrick2")) +
+  labs(
+    title = "Decadimento Spaziale dell'Eutrofizzazione (SABI)",
+    subtitle = "Confronto multitemporale 2015 vs 2025",
+    x = "Distanza dalla linea di costa (metri)",
+    y = "Indice SABI"
+  ) +
+  theme_minimal()
+  ```
+![BLOOM ATITLAN](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/decadimento%20spaziale%20dell'eutrofizzazione.jpeg)
+![BLOOM ATITLAN](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/decadimento%20spaziale%20dell'eutrofizzazione%20amatitlan.jpeg)
+
 # 📊 DISCUSSIONE DEI RISULTATI
 
 Per l'NDVI: Evidenziare se attorno ai laghi la foresta (verde scuro) ha ceduto il passo a zone agricole/urbane (giallo/marrone).
