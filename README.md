@@ -215,8 +215,8 @@ ggplot(df_long, aes(x = Distanza, y = SABI, color = Anno)) +
   ) +
   theme_minimal()
   ```
-![decadimento eutro atitlan](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/decadimento%20spaziale%20dell'eutrofizzazione.jpeg)
-![decadimento eutro amatitlan](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/decadimento%20spaziale%20eutrofizzazione%20amatitlan.jpeg)
+![decadimento eutro atitlan](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/decadimento%20spaziale%20eutrofizzazione%20amatitlan.jpeg)
+![decadimento eutro amatitlan](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/dec%20amatitlan.jpeg)
 
 # 📊 DISCUSSIONE DEI RISULTATI
 
