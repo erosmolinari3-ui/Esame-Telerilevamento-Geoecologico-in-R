@@ -216,10 +216,10 @@ ggplot(df_long, aes(x = Distanza, y = SABI, color = Anno)) +
   theme_minimal()
   ```
 ![decadimento eutro atitlan](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/decadimento%20spaziale%20eutrofizzazione%20amatitlan.jpeg)
-![decadimento eutro amatitlan](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/dec%20amatitlan.jpeg)
 
-##commento dei grafici
 Lago di Atitlán (Risposta del lago profondo): Il decadimento spaziale è perlopiù assente. La curva LOESS del 2025 mostra che, dopo il picco iniziale sulla costa, i valori di SABI rimangono costantemente superiori alla baseline storica del 2015 senza però, essere alti. Questo ci presenta la situazione di un lago con grande capacità tampone (diluizione volumetrica) che protegge il centro del lago per la sua profondità, che però sta sviluppando una sensibile modificazione data da agenti esterni. 
+
+![decadimento eutro amatitlan](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/dec%20amatitlan.jpeg)
 
 Lago di Amatitlan: Il modello LOESS mostra un nitido decadimento spaziale inshore-offshore. Nel 2025 (curva rossa) si osserva un picco severo di eutrofizzazione confinato nei primi 100/200 metri dalla riva, che decade rapidamente e linearizza verso lo zero man mano che ci si sposta verso le acque aperte (pelagiche) rimanendo però sempre più alto dello 0. A 500 metri circa rimane costante il livello nel 2025 evidenziando una netta separazione tra ciò che avveniva nel 2015, derivato dalla capacità del corpo d'acqua di diffondere le sostanze in acque più prossimali. L'intero volume d'acqua, a causa della scarsa profondità e della sempre più forte pressione antropica, è saturo di nutrienti, determinando una fioritura sistemica diffusa.
 
