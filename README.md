@@ -270,7 +270,8 @@ Lago di Amatitlan: Il modello LOESS mostra un nitido decadimento spaziale inshor
 # 📊 DISCUSSIONE DEI RISULTATI
 
 ### 🏔️ LAGO DI ATITLAN
-![CONFRONTO ATITLAN](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/cividisatit.jpeg)
+
+<img width="800" height="600" alt="immagini_esame" src="https://github.com/erosmolinari3-ui/immagini-esame/blob/main/bbbbbbbb.jpeg" />
 
 In questi 10 anni i livelli di fioritura algale si sono espansi dalle sponde a tutto il lago. Analizzando le zone di sponda si può notare che le fioriture algali si sono espanse in modo concentrico negli anni, muovendosi verso il centro dello specchio d'acqua (zone naturalmente meno antropizzate). Analizzando i plot del LULC si denota subito un incremento di zone antropizzate con progressiva trasformazione di zone forestali seppur con basso indice NDVI a favore di zone di insediamento o altro utilizzo. Questo può causare un dilavamento costante di sedimenti intorno al lago che innesca processi di instabilità ecologica in un lago storicamente oligotrofico (caratteristica derivata dalla sua profondità)
 
