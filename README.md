@@ -82,33 +82,34 @@ im.plotRGB(lago15, r=3, g=2, b=1)
 
 Analizziamo la distribuzione spettrale delle frequenze per verificare la consistenza radiometrica dei sensori tra il 2015 e il 2025:
 ``` r
-hist(values(lago15[[1]]), freq = FALSE, xlim = c(0, 30000),ylim = c(0, 0.00045), main="Istogramma Red 2015", col="red")
+hist(values(lago15[[1]]), freq = FALSE, xlim = c(0, 30000),ylim = c(0, 0.00045), main="Istogramma Blue 2015", col="blue")
 hist(values(lago15[[2]]), freq = FALSE, xlim = c(0, 30000),ylim = c(0, 0.00045), main="Istogramma Green 2015", col="green")
-hist(values(lago15[[3]]),freq = FALSE, xlim = c(0, 30000),ylim = c(0, 0.00045), main="Istogramma Blue 2015", col="blue")
+hist(values(lago15[[3]]),freq = FALSE, xlim = c(0, 30000),ylim = c(0, 0.00045), main="Istogramma red 2015", col="red")
 
-hist(values(lago25[[1]]), freq = FALSE, xlim = c(0, 30000),ylim = c(0, 0.00045), main="Istogramma Red 2025", col="red")
+hist(values(lago25[[1]]), freq = FALSE, xlim = c(0, 30000),ylim = c(0, 0.00045), main="Istogramma Blue 2025", col="blue")
 hist(values(lago25[[2]]), freq = FALSE, xlim = c(0, 30000),ylim = c(0, 0.00045), main="Istogramma Green 2025", col="green")
-hist(values(lago25[[3]]), freq = FALSE, xlim = c(0, 30000),ylim = c(0, 0.00045), main="Istogramma Blue 2025", col="blue")
+hist(values(lago25[[3]]), freq = FALSE, xlim = c(0, 30000),ylim = c(0, 0.00045), main="Istogramma red 2025", col="red")
 
 ```
-![ISTO](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/ISTO.jpeg)
+![ISTO](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/hist.jpeg)
 
 > Istogrammi di consistenza radiometrica, confronto tra 2015 e 2025
 
 Metto in plot le singole bande per verificare vegetazione sana (NIR) e vegetazione visibile (RBG)
 ``` r
 im.multiframe(2,4) # Visualizzare un pannello grafico con 2 righe e 4 colonne
-plot(lago15[[1]], col = magma(100), main = "Pre - Red") 
+plot(lago15[[1]], col = magma(100), main = "Pre - blue") 
 plot(lago15[[2]], col = magma(100), main = "Pre - Green")
-plot(lago15[[3]], col = magma(100), main = "Pre - Blue")
+plot(lago15[[3]], col = magma(100), main = "Pre - red")
 plot(lago15[[4]], col = magma(100), main = "Pre - NIR")
 
-plot(lago25[[1]], col = magma(100), main = "Post - Red")
+plot(lago25[[1]], col = magma(100), main = "Post - blue")
 plot(lago25[[2]], col = magma(100), main = "Post - Green")
-plot(lago25[[3]], col = magma(100), main = "Post - Blue")
+plot(lago25[[3]], col = magma(100), main = "Post - red")
 plot(lago25[[4]], col = magma(100), main = "Post - NIR")
+
 ``` 
-![BANDE](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/plot%20singole.jpeg)
+![BANDE](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/prepost.jpeg)
 > Si notano cambiamenti principalmente intorno alle zone di cosa come le bande RGB vengano assorbite, determinando un graduale cambiamento a zone antropizzate o di suolo nudo
 
 ### Calcolo degli indici NDVI e DVI usati per vedere il **land-use change**
