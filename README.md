@@ -174,7 +174,14 @@ maschera_acqua15 <- ndwi15 > 0
 maschera_acqua20 <- ndwi20 > 0
 maschera_acqua25 <- ndwi25 > 0
 ```
+> Vedendo i risultati che vedremo in seguito del decadimento spaziale dell'eutrofizzazione con maschera_acqua(15,20,25) = 0, decido di porre i valori 0 come NA per non falsare il raggruppamento del poligono e alterare i dati
+``` r
+# Trasforma tutti i valori 0 (FALSE, la terra) in NA
+maschera_acqua15[maschera_acqua15 == 0] <- NA
+maschera_acqua20[maschera_acqua20 == 0] <- NA
+maschera_acqua25[maschera_acqua25 == 0] <- NA
 
+``` 
 CALCOLARE IL SABI (Surface Algal Bloom Index)
 Il SABI è sensibile alla clorofilla e ai cianobatteri in superficie.
 Formula: (NIR - Red) / (Blue + Green)
@@ -220,14 +227,7 @@ plot(diff_sabi, col =palette, range = c(-0.06, 0.06), main = "Differenza 2015-20
 Per validare e quantificare la relazione ecologica tra l'uso del suolo circostante e lo stato trofico delle acque lacustri, ho integrato l'analisi visiva con una modellizzazione della distanza spaziale dal fattore di disturbo (la linea di costa).
 
 >[!NOTE]
-> Vedendo i risultati che vedremo in seguito del decadimento spaziale dell'eutrofizzazione con maschera_acqua25 = 0, decido di porre i valori 0 come NA per non falsare il raggruppamento del poligono e alterare i dati
-``` r
-# Trasforma tutti i valori 0 (FALSE, la terra) in NA
-maschera_acqua15[maschera_acqua15 == 0] <- NA
-maschera_acqua20[maschera_acqua20 == 0] <- NA
-maschera_acqua25[maschera_acqua25 == 0] <- NA
 
-``` 
 ``` r
 library(ggplot2)
 
