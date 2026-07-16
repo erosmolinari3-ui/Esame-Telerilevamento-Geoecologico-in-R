@@ -76,9 +76,9 @@ verifichiamo un'immagine preliminare con le bande True colors (colori reali):
 ``` r
 im.plotRGB(lago15, r=3, g=2, b=1)
 ```
-![LAGO1](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/LAGO1.jpeg)
+![prepost](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/pre%20post.jpeg)
 
-> lago di Atitlan con bande True Colors
+> lago di Atitlan con bande True Colors, a sx 2015 a dx 2025
 
 Analizziamo la distribuzione spettrale delle frequenze per verificare la consistenza radiometrica dei sensori tra il 2015 e il 2025:
 ``` r
