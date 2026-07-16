@@ -294,7 +294,7 @@ Lago di Amatitlan: Il modello LOESS mostra un nitido decadimento spaziale inshor
 
 > dati plottati con altra scala di valori per il daltonismo "cividis"
 
-In questi 10 anni i livelli di fioritura algale si sono espansi dalle sponde a tutto il lago. Analizzando le zone di sponda si può notare che le fioriture algali si sono espanse in modo concentrico negli anni, muovendosi verso il centro dello specchio d'acqua (zone naturalmente meno antropizzate). Analizzando i plot del LULC si denota subito un incremento di zone antropizzate con progressiva trasformazione di zone forestali seppur con basso indice NDVI a favore di zone di insediamento o altro utilizzo. Questo può causare un dilavamento costante di sedimenti intorno al lago che innesca processi di instabilità ecologica in un lago storicamente oligotrofico (caratteristica derivata dalla sua profondità)
+In questi 10 anni i livelli di fioritura algale si sono espansi dalle sponde a tutto il lago. Analizzando le zone di sponda si può notare che le fioriture algali si sono espanse in modo concentrico negli anni, muovendosi verso il centro dello specchio d'acqua (zone naturalmente meno antropizzate). Analizzando i plot del LULC si denota subito un incremento di zone antropizzate con progressiva trasformazione di zone vegetazionali, seppur con basso indice NDVI a favore di zone di insediamento o altro utilizzo. Questi fenomeni causano dilavamento di sedimenti intorno al lago che innesca processi di instabilità ecologica in un lago storicamente oligotrofico (caratteristica derivata dalla sua profondità). Tuttavia l'impatto ad ora è di lieve/moderata entità questo può permettere di sviluppare piani per il ripristino di livelli più tollerati.
 
 
 ### 🌾 LAGO DI AMATITLAN
@@ -303,7 +303,7 @@ In questi 10 anni i livelli di fioritura algale si sono espansi dalle sponde a t
 
 > dati plottati con altra scala di valori per il daltonismo "cividis"
 
-Nel 2015 il lago mostrava una fioritura algale confinata e acuta nella porzione terminale est, probabilmente legata a uno scarico puntiforme. Nel 2025, in concomitanza con l'aumento dell'impatto antropico e agricolo visibile dall'NDVI su tutto il bacino , il fenomeno è cambiato: non abbiamo più l'evento isolato nella coda, ma l'intero specchio d'acqua ha subito un incremento sistematico e omogeneo dei valori di SABI. Il lago è diventato ecologicamente più instabile e diffusamente produttivo a causa del costante dilavamento di nutrienti dal suolo circostante.
+Nel 2015 il lago mostrava fioriture algali acute confinate nella porzione terminale est, probabilmente legata a uno scarico puntiforme; salvo alcune zone più separate dalla costa si verificavano già importanti fenomeni di blooming algale. Nel 2025, in concomitanza con l'aumento dell'impatto antropico e agricolo visibile dall'NDVI su tutto il bacino , il fenomeno è cambiato: non abbiamo più l'evento di grande entità isolato nella coda, ma l'intero specchio d'acqua ha subito un incremento sistematico e omogeneo dei valori di SABI. Il lago è diventato ecologicamente ancora più instabile a causa della costante immissione di nutrienti/inquinanti dal suolo circostante.
 
 📚 RIFERIMENTI BIBLIOGRAFICI
 
