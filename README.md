@@ -56,7 +56,16 @@ library(imageRy)    # visualizzazione delle immagini satellitari
 library(viridis)    # editing delle palette di colori
 library(RColorBrewer)  # editing delle palette di colori per scale di colori per daltonismo
 library(ggplot2) #per creare grafici di confronto multivariabili
+```
 
+Importazione dei dati tramite `setwd()`:
+``` r
+setwd("~C:\\Users\\erosm\\Downloads\\")
+getwd()
+list.files()
+```
+Dati importati via `rast()`:
+``` r
 lago15 <- rast("C:/Users/erosm/Downloads/amatitlan_2015.tif")
 lago20 <- rast("C:/Users/erosm/Downloads/amatitlan_2020.tif")
 lago25 <- rast("C:/Users/erosm/Downloads/amatitlan_2025.tif")
@@ -86,6 +95,22 @@ hist(values(lago25[[3]]), freq = FALSE, xlim = c(0, 30000),ylim = c(0, 0.00045),
 
 > Istogrammi di consistenza radiometrica, confronto tra 2015 e 2025
 
+Metto in plot le singole bande per verificare vegetazione sana (NIR) e vegetazione visibile (RBG)
+``` r
+im.multiframe(2,4) # Visualizzare un pannello grafico con 2 righe e 4 colonne
+plot(lago15[[1]], col = magma(100), main = "Pre - Red") 
+plot(lago15[[2]], col = magma(100), main = "Pre - Green")
+plot(lago15[[3]], col = magma(100), main = "Pre - Blue")
+plot(lago15[[4]], col = magma(100), main = "Pre - NIR")
+
+plot(lago25[[1]], col = magma(100), main = "Post - Red")
+plot(lago25[[2]], col = magma(100), main = "Post - Green")
+plot(lago25[[3]], col = magma(100), main = "Post - Blue")
+plot(lago25[[4]], col = magma(100), main = "Post - NIR")
+``` 
+![BANDE](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/plot%20singole.jpeg)
+> Si notano cambiamenti principalmente intorno alle zone di cosa, determinando un graduale cambiamento a zone antropizzate
+
 ###Calcolo degli indici NDVI e DVI usati per vedere il **land-use change** (Banda 3 = Red, Banda 4 = NIR)
 ``` r
 ndvi15 <- (lago15[[4]] - lago15[[3]]) / (lago15[[4]] + lago15[[3]])
@@ -98,14 +123,7 @@ dvi20 <- lago20[[4]] - lago20[[3]]
 dvi25 <- lago25[[4]] - lago25[[3]]
 ``` 
 PLOT LAND USE/LAND COVER CHANGE (NDVI)
-``` r
-par(mfrow = c(2, 2))
-``` 
-Ho creato una palette che mi sembrasse più idonea alla visualizzazione Palette colori: Marrone (suolo nudo/urbano) -> Giallo -> Verde scuro (Foresta)
-``` r
-cl_ndvi <- colorRampPalette(c("saddlebrown", "yellow", "forestgreen"))(100)
-``` 
-Plot per verificare il land-use change
+
 ``` r
 plot(ndvi15, col=viridis(100), range =c(0,1), main = "Stato Vegetazione Atitlan 2015 (NDVI)")
 plot(ndvi20, col=viridis(100), range =c(0,1), main = "Stato Vegetazione Atitlan 2020 (NDVI)")
