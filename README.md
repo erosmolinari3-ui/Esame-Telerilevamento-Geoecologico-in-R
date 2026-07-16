@@ -229,8 +229,6 @@ plot(diff_sabi, col =palette, range = c(-0.06, 0.06), main = "Differenza 2015-20
 
 Per validare e quantificare la relazione ecologica tra l'uso del suolo circostante e lo stato trofico delle acque lacustri, ho integrato l'analisi visiva con una modellizzazione della distanza spaziale dal fattore di disturbo (la linea di costa).
 
->[!NOTE]
-
 ``` r
 library(ggplot2)
 
