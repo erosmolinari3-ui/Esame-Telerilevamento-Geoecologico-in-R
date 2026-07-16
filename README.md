@@ -37,7 +37,7 @@ Il tipo di satellite usato è Landsat 8 in Google Earth Engine (GEE) (Modello Co
 
 [Landsat 8 su Google Earth Engine](https://code.earthengine.google.com/?scriptPath=Examples%3ADatasets%2FLANDSAT%2FLANDSAT_LC08_C02_T1&hl=it)
 
->[!NOTA]
+>[!NOTE]
 > Il codice JavaScript utilizzato è quello fornito durante il corso ed è disponibile nel file Codice.js
 
 Le immagini sono state prese dall’ 1 agosto al 31 dicembre degli anni indicati
@@ -46,7 +46,7 @@ Motivazione ecologica : coincide con i picchi storici di fioritura algale e cian
 
 # 💻 Analisi codice e sviluppo del progetto in R
 
->[!NOTA]
+>[!NOTE]
 >Per motivi di chiarezza e di impatto grafico l'analisi metodologica viene sviluppata qui in Github nel dettaglio sul Lago di Atitlán e successivamente applicata in ottica comparativa al Lago di Amatitlán, offrendo così un duplice scenario di risposta ecologica (lago profondo vs lago poco profondo) agli impatti del LULC e di fioritura algale.
 
 caricamento librerie e dei dati
