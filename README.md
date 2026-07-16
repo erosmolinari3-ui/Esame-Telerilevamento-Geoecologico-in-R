@@ -277,9 +277,7 @@ In questi 10 anni i livelli di fioritura algale si sono espansi dalle sponde a t
 
 ### 🌾 LAGO DI AMATITLAN
 
-![CONFRONTO AMATITLAN](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/cividisamati.jpeg)
-
-<img width="800" height="600" alt="immagini_esame" src="https://github.com/erosmolinari3-ui/immagini-esame/blob/main/cividisatit.jpeg" />
+<img width="800" height="600" alt="immagini_esame" src="https://github.com/erosmolinari3-ui/immagini-esame/blob/main/aaaaaaaaaa.jpeg" />
 
 > dati plottati con altra scala di valori per il daltonismo "cividis"
 
