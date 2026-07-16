@@ -109,7 +109,7 @@ plot(lago25[[3]], col = magma(100), main = "Post - Blue")
 plot(lago25[[4]], col = magma(100), main = "Post - NIR")
 ``` 
 ![BANDE](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/plot%20singole.jpeg)
-> Si notano cambiamenti principalmente intorno alle zone di cosa, determinando un graduale cambiamento a zone antropizzate
+> Si notano cambiamenti principalmente intorno alle zone di cosa come le bande RGB vengano assorbite, determinando un graduale cambiamento a zone antropizzate o di suolo nudo
 
 ###Calcolo degli indici NDVI e DVI usati per vedere il **land-use change** (Banda 3 = Red, Banda 4 = NIR)
 ``` r
