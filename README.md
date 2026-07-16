@@ -223,11 +223,11 @@ library(ggplot2)
 confini_lago <- as.polygons(maschera_acqua25)
 linea_costa  <- as.lines(confini_lago)
 
-# Calcolo delle distanze continue
+# Calcolo delle distanze continue (distanza di tutti i pixel della mappa dalla linea di costa)
 dist_raster <- distance(sabi25_solo_lago, linea_costa)
 dist_lago <- mask(dist_raster, maschera_acqua25)
 
-# Estrazione dei valori per l'analisi statistica in R con ggplot2
+# Estrazione dei valori per l'analisi statistica in R con ggplot2 eliminando i valori NA
 df_spaziale <- data.frame(
   Distanza = as.numeric(values(dist_lago)),
   SABI_2015 = as.numeric(values(sabi15_solo_lago)),
@@ -242,8 +242,11 @@ df_long <- data.frame(
   SABI = c(df_sub$SABI_2015, df_sub$SABI_2025),
   Anno = rep(c("2015", "2025"), each = nrow(df_sub))
 )
+  ```
 
-# Plotting del modello di regressione locale LOESS
+## Plotting del modello di regressione locale LOESS (Locally Estimated Scatterplot Smoothing) per adattare un modello di decadimento non lineare
+
+``` r
 ggplot(df_long, aes(x = Distanza, y = SABI, color = Anno)) +
   geom_point(alpha = 0.15, size = 1) +
   geom_smooth(method = "loess", span = 0.5, size = 1.5, se = TRUE) +
@@ -258,7 +261,7 @@ ggplot(df_long, aes(x = Distanza, y = SABI, color = Anno)) +
   ```
 ![decadimento eutro atitlan](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/decadimento%20spaziale%20eutrofizzazione%20amatitlan.jpeg)
 
-Lago di Atitlán (Risposta del lago profondo): Il decadimento spaziale è perlopiù assente. La curva LOESS del 2025 mostra che, dopo il picco iniziale sulla costa, i valori di SABI rimangono costantemente superiori alla baseline storica del 2015 senza però, essere alti. Questo ci presenta la situazione di un lago con grande capacità tampone (diluizione volumetrica) che protegge il centro del lago per la sua profondità, che però sta sviluppando una sensibile modificazione data da agenti esterni. 
+Lago di Atitlán: Il decadimento spaziale è perlopiù assente. La curva LOESS del 2025 mostra che, dopo il picco iniziale sulla costa, i valori di SABI rimangono costantemente superiori alla baseline storica del 2015 senza però, essere alti. Questo ci presenta la situazione di un lago con grande capacità tampone (diluizione volumetrica) che protegge il centro del lago per la sua profondità, che però, poco a poco, sta sviluppando una sensibile modificazione data da agenti esterni. 
 
 ![decadimento eutro amatitlan](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/dec%20amatitlan.jpeg)
 
