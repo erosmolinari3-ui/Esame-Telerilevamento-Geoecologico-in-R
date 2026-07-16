@@ -38,7 +38,7 @@ Il tipo di satellite usato è Landsat 8 in Google Earth Engine (GEE) (Modello Co
 [Landsat 8 su Google Earth Engine](https://code.earthengine.google.com/?scriptPath=Examples%3ADatasets%2FLANDSAT%2FLANDSAT_LC08_C02_T1&hl=it)
 
 >[!NOTE]
-> Il codice JavaScript utilizzato è quello fornito durante il corso ed è disponibile nel file Codice.js
+> Il codice JavaScript utilizzato è [QUESTO](https://github.com/erosmolinari3-ui/CODICE-RICERCA-IN-LANDSAT/blob/main/README.md)
 
 Le immagini sono state prese dall’ 1 agosto al 31 dicembre degli anni indicati
 
