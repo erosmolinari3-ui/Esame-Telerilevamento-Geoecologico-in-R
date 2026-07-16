@@ -211,7 +211,7 @@ plot(diff_sabi, col =palette, range = c(-0.06, 0.06), main = "Differenza 2015-20
 
 ![BLOOM ATITLAN](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/blooma.jpeg)
 
-![BLOOM AMATITLAN](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/amabloom.jpeg)
+![BLOOM AMATITLAN](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/bloomatit.jpeg)
 
 
 ##Decadimento Spaziale dell'Eutrofizzazione
