@@ -279,9 +279,8 @@ In questi 10 anni i livelli di fioritura algale si sono espansi dalle sponde a t
 
 ![CONFRONTO AMATITLAN](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/cividisamati.jpeg)
 
-<p align="center">
-  <img src="immagini_esame/cividisatit.jpeg" width="1000"/>
-</p>
+<img width="800" height="600" alt="immagini_esame" src="https://github.com/erosmolinari3-ui/immagini-esame/blob/main/cividisatit.jpeg" />
+
 > dati plottati con altra scala di valori per il daltonismo "cividis"
 
 Nel 2015 il lago mostrava una fioritura algale confinata e acuta nella porzione terminale est, probabilmente legata a uno scarico puntiforme. Nel 2025, in concomitanza con l'aumento dell'impatto antropico e agricolo visibile dall'NDVI su tutto il bacino , il fenomeno è cambiato: non abbiamo più l'evento isolato nella coda, ma l'intero specchio d'acqua ha subito un incremento sistematico e omogeneo dei valori di SABI. Il lago è diventato ecologicamente più instabile e diffusamente produttivo a causa del costante dilavamento di nutrienti dal suolo circostante.
