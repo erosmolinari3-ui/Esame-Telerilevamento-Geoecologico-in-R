@@ -174,12 +174,6 @@ maschera_acqua15 <- ndwi15 > 0
 maschera_acqua20 <- ndwi20 > 0
 maschera_acqua25 <- ndwi25 > 0
 ```
->[!NOTE]
-> Vedendo i risultati del decadimento spaziale dell'eutrofizzazione decido di porre i valori 0 come NA per non falsare le divisioni
-``` r
-# Trasforma tutti i valori 0 (FALSE, la terra) in NA
-maschera_acqua25[maschera_acqua25 == 0] <- NA
-``` 
 
 CALCOLARE IL SABI (Surface Algal Bloom Index)
 Il SABI è sensibile alla clorofilla e ai cianobatteri in superficie.
@@ -223,7 +217,17 @@ plot(diff_sabi, col =palette, range = c(-0.06, 0.06), main = "Differenza 2015-20
 
 ## Decadimento Spaziale dell'Eutrofizzazione
 
-Per validare e quantificare la relazione ecologica tra l'uso del suolo circostante e lo stato trofico delle acque lacustri, abbiamo integrato l'analisi visiva con una modellizzazione della distanza spaziale dal fattore di disturbo (la linea di costa).
+Per validare e quantificare la relazione ecologica tra l'uso del suolo circostante e lo stato trofico delle acque lacustri, ho integrato l'analisi visiva con una modellizzazione della distanza spaziale dal fattore di disturbo (la linea di costa).
+
+>[!NOTE]
+> Vedendo i risultati che vedremo in seguito del decadimento spaziale dell'eutrofizzazione con maschera_acqua25 = 0, decido di porre i valori 0 come NA per non falsare il raggruppamento del poligono e alterare i dati
+``` r
+# Trasforma tutti i valori 0 (FALSE, la terra) in NA
+maschera_acqua15[maschera_acqua15 == 0] <- NA
+maschera_acqua20[maschera_acqua20 == 0] <- NA
+maschera_acqua25[maschera_acqua25 == 0] <- NA
+
+``` 
 ``` r
 library(ggplot2)
 
@@ -242,6 +246,9 @@ df_spaziale <- data.frame(
   SABI_2025 = as.numeric(values(sabi25_solo_lago))
 )
 df_spaziale <- df_spaziale[complete.cases(df_spaziale), ]
+
+#settiamo la nostra randomizzazione per renderla replicabile
+set.seed(42)        #la risposta alla domanda che non si sa
 
 # Campionamento statistico e reshaping in formato lungo per ggplot
 df_sub <- df_spaziale[sample(1:nrow(df_spaziale), 5000), ]
