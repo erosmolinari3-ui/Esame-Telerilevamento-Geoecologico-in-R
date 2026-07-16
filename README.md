@@ -193,9 +193,8 @@ sabi20 <- (lago20[[4]] - lago20[[3]]) / (lago20[[1]] + lago20[[2]])
 sabi25 <- (lago25[[4]] - lago25[[3]]) / (lago25[[1]] + lago25[[2]])
 ``` 
 
-STEP 3: APPLICARE LA MASCHERA (Il trucco per la scala dei colori)
-"Tagliamo via" la terraferma dal calcolo delle alghe, mantenendo solo l'acqua
-maskvalue=FALSE significa "Nascondi tutto quello che NON è acqua"
+STEP 3: APPLICARE LA MASCHERA 
+tolgo la terraferma dal calcolo delle alghe, mantenendo solo l'acqua
 
 ``` r
 sabi15_solo_lago <- mask(sabi15, maschera_acqua15, maskvalue=FALSE)
@@ -204,10 +203,10 @@ sabi25_solo_lago <- mask(sabi25, maschera_acqua25, maskvalue=FALSE)
 diff_sabi<-(sabi15_solo_lago-sabi25_solo_lago)
 ``` 
 
-Creiamo una palette idonea che permetta di verificare anche il più minimo cambiamento nei 10 anni: 
+Creiamo una palette idonea che permetta di verificare anche il più minimo cambiamento nei 10 anni sempre rimanendo in linea con colori visibili a tutti: 
 
 ``` r
-palette <- colorRampPalette(brewer.pal(11, "PuOr"))(100)
+palette <- colorRampPalette(brewer.pal(11, "PuOr"))(10)
 ```
 
 ``` r
