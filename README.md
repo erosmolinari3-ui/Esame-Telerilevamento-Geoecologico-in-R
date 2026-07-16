@@ -214,7 +214,7 @@ plot(diff_sabi, col =palette, range = c(-0.06, 0.06), main = "Differenza 2015-20
 ![BLOOM AMATITLAN](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/bloomatit.jpeg)
 
 
-#Decadimento Spaziale dell'Eutrofizzazione
+## Decadimento Spaziale dell'Eutrofizzazione
 
 Per validare e quantificare la relazione ecologica tra l'uso del suolo circostante e lo stato trofico delle acque lacustri, abbiamo integrato l'analisi visiva con una modellizzazione della distanza spaziale dal fattore di disturbo (la linea di costa).
 ``` r
