@@ -280,7 +280,7 @@ In questi 10 anni i livelli di fioritura algale si sono espansi dalle sponde a t
 ![CONFRONTO AMATITLAN](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/cividisamati.jpeg)
 
 <p align="center">
-  <img src="cividisatit.jpeg" width="1000"/>
+  <img src="immagini_esame/cividisatit.jpeg" width="1000"/>
 </p>
 > dati plottati con altra scala di valori per il daltonismo "cividis"
 
