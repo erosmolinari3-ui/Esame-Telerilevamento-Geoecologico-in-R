@@ -270,14 +270,16 @@ Lago di Amatitlan: Il modello LOESS mostra un nitido decadimento spaziale inshor
 # 📊 DISCUSSIONE DEI RISULTATI
 
 ### 🏔️ LAGO DI ATITLAN
-![CONFRONTO ATITLAN](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/CONFRONTO%20ATITLAN.jpeg)
+![CONFRONTO ATITLAN](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/cividisatit.jpeg)
 
 In questi 10 anni i livelli di fioritura algale si sono espansi dalle sponde a tutto il lago. Analizzando le zone di sponda si può notare che le fioriture algali si sono espanse in modo concentrico negli anni, muovendosi verso il centro dello specchio d'acqua (zone naturalmente meno antropizzate). Analizzando i plot del LULC si denota subito un incremento di zone antropizzate con progressiva trasformazione di zone forestali seppur con basso indice NDVI a favore di zone di insediamento o altro utilizzo. Questo può causare un dilavamento costante di sedimenti intorno al lago che innesca processi di instabilità ecologica in un lago storicamente oligotrofico (caratteristica derivata dalla sua profondità)
 
 
 ### 🌾 LAGO DI AMATITLAN
 
-![CONFRONTO AMATITLAN](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/CONFRONTO%20AMATITLAN.jpeg)
+![CONFRONTO AMATITLAN](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/cividisamati.jpeg)
+
+> dati plottati con altra scala di valori per il daltonismo "cividis"
 
 Nel 2015 il lago mostrava una fioritura algale confinata e acuta nella porzione terminale est, probabilmente legata a uno scarico puntiforme. Nel 2025, in concomitanza con l'aumento dell'impatto antropico e agricolo visibile dall'NDVI su tutto il bacino , il fenomeno è cambiato: non abbiamo più l'evento isolato nella coda, ma l'intero specchio d'acqua ha subito un incremento sistematico e omogeneo dei valori di SABI. Il lago è diventato ecologicamente più instabile e diffusamente produttivo a causa del costante dilavamento di nutrienti dal suolo circostante.
 
