@@ -202,14 +202,14 @@ palette <- colorRampPalette(brewer.pal(11, "PuOr"))(100)
 ```
 
 ``` r
-plot(sabi15_solo_lago, col = viridis(100), range = c(-0.06, 0.06), main = "Bloom Algali 2015 Atitlan (SABI)")
-plot(sabi20_solo_lago, col = viridis(100), range = c(-0.06, 0.06), main = "Bloom Algali 2020 Atitlan (SABI)")
-plot(sabi25_solo_lago, col = viridis(100), range = c(-0.06, 0.06), main = "Bloom Algali 2025 Atitlan (SABI)")
+plot(sabi15_solo_lago, col = viridis(10), range = c(-0.06, 0.06), main = "Bloom Algali 2015 Atitlan (SABI)")
+plot(sabi20_solo_lago, col = viridis(10), range = c(-0.06, 0.06), main = "Bloom Algali 2020 Atitlan (SABI)")
+plot(sabi25_solo_lago, col = viridis(10), range = c(-0.06, 0.06), main = "Bloom Algali 2025 Atitlan (SABI)")
 plot(diff_sabi, col =palette, range = c(-0.06, 0.06), main = "Differenza 2015-2025 Atitlan (SABI)")
 
 ```
 
-![BLOOM ATITLAN](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/atibloom.jpeg)
+![BLOOM ATITLAN](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/blooma.jpeg)
 
 ![BLOOM AMATITLAN](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/amabloom.jpeg)
 
