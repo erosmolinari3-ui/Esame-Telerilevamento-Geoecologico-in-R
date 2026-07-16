@@ -175,7 +175,7 @@ maschera_acqua15 <- ndwi15 > 0
 maschera_acqua20 <- ndwi20 > 0
 maschera_acqua25 <- ndwi25 > 0
 ```
-> Vedendo i risultati che vedremo in seguito del decadimento spaziale dell'eutrofizzazione con maschera_acqua(15,20,25) = 0, decido di porre i valori 0 come NA per non falsare il raggruppamento del poligono e alterare i dati
+> Osservando i risultati che vedremo in seguito del **decadimento spaziale dell'eutrofizzazione** con maschera_acqua(15,20,25) = 0, decido di porre i valori 0 come NA per non falsare il raggruppamento del poligono e alterare i dati
 ``` r
 # Trasforma tutti i valori 0 (FALSE, la terra) in NA
 maschera_acqua15[maschera_acqua15 == 0] <- NA
