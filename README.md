@@ -95,7 +95,7 @@ hist(values(lago25[[3]]), freq = FALSE, xlim = c(0, 30000),ylim = c(0, 0.00045),
 
 > Istogrammi di consistenza radiometrica, confronto tra 2015 e 2025
 
-Metto in plot le singole bande per verificare vegetazione sana (NIR) e vegetazione visibile (RBG)
+Metto in plot le singole bande per verificare le bande NIR e RBG in maniera grafica
 ``` r
 im.multiframe(2,4) # Visualizzare un pannello grafico con 2 righe e 4 colonne
 plot(lago15[[1]], col = magma(100), main = "Pre - blue") 
