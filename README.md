@@ -21,7 +21,7 @@
 Il Mesoamerica è una delle aree più critiche al mondo per studiare il Land Use/Land Cover Change (LULC), specialmente per le dinamiche di deforestazione e di espansione agricola. In Guatemala, l'accelerazione di questi fenomeni e la pressione urbana stanno alterando radicalmente i bacini idrografici lacustri.
 
 # 🎯 Obiettivo
-L'obiettivo di questo studio è analizzare il cambiamento di land use change e di bloom algale in zone lagunari, aree critiche del paese che in questi ultimi anni hanno subito varie trasformazioni dovute all'antropizzazione. Verrà verificato in seguito, se presente, una relazione tra LULC e fenomeni di eutrofizzazione acquatica, tutto questo  in un orizzonte temporale di 10 anni ($2015 \rightarrow 2020 \rightarrow 2025$), con campionamenti a cadenza quinquennale. Inoltre verrà verificata la relazione tra distanza dalla costa ed intensità di fioritura algale.
+L'obiettivo di questo studio è analizzare il cambiamento di land use change e di bloom algale in zone lagunari, aree critiche del paese che in questi ultimi anni hanno subito varie trasformazioni dovute all'antropizzazione. Verrà verificato in seguito, se presente, una relazione tra LULC e fenomeni di eutrofizzazione acquatica, tutto questo  in un orizzonte temporale di 10 anni ($2015 \rightarrow 2020 \rightarrow 2025$), con campionamenti a cadenza quinquennale. Inoltre verrà verificata la relazione tra distanza dalla costa ed intensità di fioritura algale, questo per verificare se il fenomeno possa essere relazionato a rilasci nell'area di nutrienti derivati da liscivazioni del terreno o da immissioni esterne inquinanti.
 
 # 🔬 Approccio Comparativo: Lago Profondo vs Lago Poco Profondo
 
