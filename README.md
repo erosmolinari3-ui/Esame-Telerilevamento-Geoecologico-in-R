@@ -252,7 +252,7 @@ df_spaziale <- data.frame(
 df_spaziale <- df_spaziale[complete.cases(df_spaziale), ]
 
 #settiamo la nostra randomizzazione per renderla replicabile
-set.seed(42)        #la risposta alla domanda che non si sa
+set.seed(42)        #la risposta a tutto
 
 # Campionamento statistico e reshaping in formato lungo per ggplot
 df_sub <- df_spaziale[sample(1:nrow(df_spaziale), 5000), ]
