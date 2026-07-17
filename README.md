@@ -139,7 +139,7 @@ PLOT LAND USE/LAND COVER CHANGE (NDVI)
 plot(ndvi15, col=viridis(100), range =c(0,1), main = "Stato Vegetazione Atitlan 2015 (NDVI)")
 plot(ndvi20, col=viridis(100), range =c(0,1), main = "Stato Vegetazione Atitlan 2020 (NDVI)")
 plot(ndvi25, col=viridis(100), range =c(0,1), main = "Stato Vegetazione Atitlan 2025 (NDVI)")
-plot(ndvi, col=viridis(100), range =c(0,1), main = "Differenza 2015-2025 Atitlan (NDVI)")
+plot(diff_ndvi, col=viridis(100), range =c(0,1), main = "Differenza 2015-2025 Atitlan (NDVI)")
 
 ``` 
 
