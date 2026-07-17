@@ -91,7 +91,7 @@ hist(values(lago25[[2]]), freq = FALSE, xlim = c(0, 30000),ylim = c(0, 0.00045),
 hist(values(lago25[[3]]), freq = FALSE, xlim = c(0, 30000),ylim = c(0, 0.00045), main="Istogramma red 2025", col="red")
 
 ```
-![ISTO](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/hist.jpeg)
+![ISTO](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/istonir.jpeg)
 
 > Istogrammi di consistenza radiometrica, confronto tra 2015 e 2025
 
