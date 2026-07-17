@@ -84,11 +84,14 @@ Analizziamo la distribuzione spettrale delle frequenze per verificare la consist
 ``` r
 hist(values(lago15[[1]]), freq = FALSE, xlim = c(0, 30000),ylim = c(0, 0.00045), main="Istogramma Blue 2015", col="blue")
 hist(values(lago15[[2]]), freq = FALSE, xlim = c(0, 30000),ylim = c(0, 0.00045), main="Istogramma Green 2015", col="green")
-hist(values(lago15[[3]]),freq = FALSE, xlim = c(0, 30000),ylim = c(0, 0.00045), main="Istogramma red 2015", col="red")
+hist(values(lago15[[3]]), freq = FALSE, xlim = c(0, 30000),ylim = c(0, 0.00045), main="Istogramma red 2015", col="red")
+hist(values(lago15[[3]]), freq = FALSE, xlim = c(0, 30000),ylim = c(0, 0.00045), main="Istogramma NIR 2015", col="purple")
+
 
 hist(values(lago25[[1]]), freq = FALSE, xlim = c(0, 30000),ylim = c(0, 0.00045), main="Istogramma Blue 2025", col="blue")
 hist(values(lago25[[2]]), freq = FALSE, xlim = c(0, 30000),ylim = c(0, 0.00045), main="Istogramma Green 2025", col="green")
 hist(values(lago25[[3]]), freq = FALSE, xlim = c(0, 30000),ylim = c(0, 0.00045), main="Istogramma red 2025", col="red")
+hist(values(lago25[[3]]), freq = FALSE, xlim = c(0, 30000),ylim = c(0, 0.00045), main="Istogramma NIR 2025", col="purple")
 
 ```
 ![ISTO](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/istogramma.jpeg)
@@ -110,7 +113,7 @@ plot(lago25[[4]], col = magma(100), main = "Post - NIR")
 
 ``` 
 ![BANDE](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/prepost.jpeg)
-> Si notano cambiamenti principalmente intorno alle zone di cosa come le bande RGB vengano assorbite, determinando un graduale cambiamento a zone antropizzate o di suolo nudo
+> Si notano cambiamenti principalmente intorno alle zone di costa come le bande RGB vengano assorbite, determinando un graduale cambiamento a zone antropizzate o di suolo nudo
 
 ### Calcolo degli indici NDVI e DVI usati per vedere il **land-use change**
 
