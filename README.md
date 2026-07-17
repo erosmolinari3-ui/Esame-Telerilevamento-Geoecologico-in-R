@@ -164,7 +164,7 @@ $$
 Inizialmente ho isolato il Lago (mascheramento NDWI) e calcolato il Surface Algae bloom index (**SABI**)
 
 L'NDWI (Normalized Difference Water Index) sfrutta il Verde (riflesso dall'acqua) e il NIR (assorbito dall'acqua).
-I valori > 0 indicano l'acqua pura. I valori < 0 indicano la terraferma.
+I valori > 0 indicano l'acqua. I valori < 0 indicano la terraferma.
 
 ``` r
 ndwi15 <- (lago15[[2]] - lago15[[4]]) / (lago15[[2]] + lago15[[4]])
