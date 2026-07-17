@@ -16,7 +16,7 @@
   </tr>
 </table>
 
- > aree di studio prese in considerazione. A sx lago di Atitlan, a dx lago di Amatitlan
+ > aree di studio prese in considerazione. A sx lago di Atitlan, a dx lago di Amatitlan                        Fonte: Google Maps
 
 Il Mesoamerica è una delle aree più critiche al mondo per studiare il Land Use/Land Cover Change (LULC), specialmente per le dinamiche di deforestazione e di espansione agricola. In Guatemala, l'accelerazione di questi fenomeni e la pressione urbana stanno alterando radicalmente i bacini idrografici lacustri.
 
