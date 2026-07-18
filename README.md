@@ -74,7 +74,10 @@ lago25 <- rast("C:/Users/erosm/Downloads/amatitlan_2025.tif")
 verifichiamo un'immagine preliminare con le bande True colors (colori reali):
 
 ``` r
+im.multiframe(,2)
 im.plotRGB(lago15, r=3, g=2, b=1)
+im.plotRGB(lago25, r=3, g=2, b=1)
+
 ```
 ![prepost](https://cdn.jsdelivr.net/gh/erosmolinari3-ui/immagini-esame@main/pre%20post.jpeg)
 
@@ -82,6 +85,7 @@ im.plotRGB(lago15, r=3, g=2, b=1)
 
 Analizziamo la distribuzione spettrale delle frequenze per verificare la consistenza radiometrica dei sensori tra il 2015 e il 2025:
 ``` r
+im.multiframe(2,4)
 hist(values(lago15[[1]]), freq = FALSE, xlim = c(0, 30000),ylim = c(0, 0.00045), main="Istogramma Blue 2015", col="blue")
 hist(values(lago15[[2]]), freq = FALSE, xlim = c(0, 30000),ylim = c(0, 0.00045), main="Istogramma Green 2015", col="green")
 hist(values(lago15[[3]]), freq = FALSE, xlim = c(0, 30000),ylim = c(0, 0.00045), main="Istogramma red 2015", col="red")
@@ -138,6 +142,7 @@ diff_ndvi<-(ndvi15-ndvi25)
 PLOT LAND USE/LAND COVER CHANGE (NDVI)
 
 ``` r
+im.multiframe(2,2)
 plot(ndvi15, col=viridis(100), range =c(0,1), main = "Stato Vegetazione Atitlan 2015 (NDVI)")
 plot(ndvi20, col=viridis(100), range =c(0,1), main = "Stato Vegetazione Atitlan 2020 (NDVI)")
 plot(ndvi25, col=viridis(100), range =c(0,1), main = "Stato Vegetazione Atitlan 2025 (NDVI)")
@@ -215,6 +220,7 @@ palette <- colorRampPalette(brewer.pal(11, "PuOr"))(10)
 ```
 
 ``` r
+im.multiframe(2,2)
 plot(sabi15_solo_lago, col = viridis(10), range = c(-0.06, 0.06), main = "Bloom Algali 2015 Atitlan (SABI)")
 plot(sabi20_solo_lago, col = viridis(10), range = c(-0.06, 0.06), main = "Bloom Algali 2020 Atitlan (SABI)")
 plot(sabi25_solo_lago, col = viridis(10), range = c(-0.06, 0.06), main = "Bloom Algali 2025 Atitlan (SABI)")
