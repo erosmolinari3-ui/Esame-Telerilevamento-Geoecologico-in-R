@@ -74,7 +74,7 @@ lago25 <- rast("C:/Users/erosm/Downloads/amatitlan_2025.tif")
 verifichiamo un'immagine preliminare con le bande True colors (colori reali):
 
 ``` r
-im.multiframe(,2)
+im.multiframe(1,2)
 im.plotRGB(lago15, r=3, g=2, b=1)
 im.plotRGB(lago25, r=3, g=2, b=1)
 
